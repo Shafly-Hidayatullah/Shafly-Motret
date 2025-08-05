@@ -1,7 +1,7 @@
 /* Import Font & Reset CSS */
 :root {
-  --primary-color: #2c3e50; /* Dark Blue/Charcoal */
-  --secondary-color: #e74c3c; /* Warm Red/Orange Accent */
+  --primary-color: #000000; /* Dark Blue/Charcoal */
+  --secondary-color: #1062dd; /* Warm Red/Orange Accent */
   --background-color: #fdfaf6; /* Warm Off-White */
   --text-color: #34495e; /* Darker Grey */
   --light-gray: #ecf0f1;
@@ -25,7 +25,7 @@ body {
 
 /* Header & Navigasi */
 header {
-  background-color: rgba(253, 250, 246, 0.85);
+  background-color: #FFD700(253, 250, 246, 0.85);
   backdrop-filter: blur(10px);
   width: 100%;
   position: fixed;
@@ -69,7 +69,7 @@ nav ul li a:hover {
   color: var(--secondary-color);
 }
 
-/* Section Umum */
+/* Section U/*mum */
 section {
   padding: 6rem 2rem 4rem;
   max-width: 1200px;
@@ -95,8 +95,7 @@ h2 {
   color: #555;
 }
 
-/* Hero Section */
-#hero {
+Hero Section */ #hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("images/hero-background.jpg"); /* Ganti dengan foto terbaik Anda */
   background-size: cover;
@@ -110,9 +109,20 @@ h2 {
   padding-top: 0;
 }
 
+/* Logo Utama */
+.hero-logo {
+  margin-top: 2rem;
+}
+
+.hero-logo img {
+  width: 500px; /* Ubah ukuran sesuai kebutuhan */
+  height: auto;
+  display: inline-block;
+}
+
 #hero h1 {
-  font-size: 3.5rem;
-  color: white;
+  font-size: 3rem;
+  color: rgb(0, 0, 0);
   margin-bottom: 1rem;
 }
 
@@ -133,7 +143,7 @@ h2 {
 }
 
 .cta-button:hover {
-  background-color: #c0392b;
+  background-color: #1062dd;
   transform: translateY(-3px);
 }
 
@@ -236,5 +246,21 @@ footer {
 
   section {
     padding: 4rem 1rem 2rem;
+  }
+
+  /* Tambahan untuk logo */
+
+  .logo-image {
+    height: 50px; /* atau ukuran yang kamu inginkan */
+    width: 50px;
+    object-fit: cover; /* agar tidak gepeng */
+    border-radius: 50%; /* ini yang membuat gambar jadi lingkaran */
+  }
+
+  .logo-text {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
   }
 }
